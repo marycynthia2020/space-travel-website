@@ -53,7 +53,7 @@ const toggleMobileMenu = () => setIsMobile(true)
           </NavLink>
         ))}
       </div>
-      <img src={hamburger} alt="" className="md:hidden" onClick={toggleMobileMenu}/>
+      <img src={hamburger} alt="" className="md:hidden cursor-pointer" onClick={toggleMobileMenu}/>
     </nav>
   );
 };

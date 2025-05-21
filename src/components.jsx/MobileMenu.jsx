@@ -27,7 +27,7 @@ const MobileMenu = () => {
 
   return (
     
-    <div className="mobileMenu shadow-xl tracking-[0.15em]" >
+    <div className="mobileMenu shadow-xl tracking-[0.15em]animate-ping" >
       <IoClose className="text-4xl text-white mb-8 self-end" onClick={toggleMobileMenu}/>
       <div className=" flex flex-col gap-8">
         {navlinks.map(link => (
