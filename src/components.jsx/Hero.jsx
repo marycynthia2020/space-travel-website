@@ -16,7 +16,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="mx-auto">
-        <button className="w-[144px] h-[144px] md:w-[272px] md:h-[272px] rounded-full bg-white text-black text-lg md:text-3xl tracking-wider" onClick={()=> navigate("/destination")}>EXPLORE</button>
+        <button className="w-[144px] h-[144px] md:w-[272px] md:h-[272px] rounded-full bg-white text-black text-lg md:text-3xl tracking-wider opacity-100" onClick={()=> navigate("/destination")}>EXPLORE</button>
       </div>
     </div>
   );

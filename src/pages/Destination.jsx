@@ -6,7 +6,7 @@ import { tabContext } from "../contexts/TabContext";
 const Destination = () => {
   const {destination} = useContext(tabContext)
   return (
-    <div className="min-h-screen bg-destinationMobile md:bg-destinationTablet xl:bg-destinationDesktop bg-no-repeat bg-center bg-cover ">
+    <div className="min-h-screen bg-destinationMobile md:bg-destinationTablet xl:bg-destinationDesktop bg-no-repeat bg-center bg-cover xl:pb-4">
       <Navbar />
       <p className="md:text-xl xl:text-[28px] flex justify-center gap-3 tracking-[0.2em] mt-8 md:mt-4 xl:mt-4 md:justify-start md:w-[80%] mx-auto ">
         <span>01</span>PICK YOUR DESTINATION

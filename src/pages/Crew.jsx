@@ -6,9 +6,9 @@ import { tabContext } from "../contexts/TabContext";
 const Crew = () => {
   const {crew} = useContext(tabContext)
   return (
-    <div className="min-h-screen bg-crewMobile md:bg-crewTablet xl:bg-crewDesktop bg-no-repeat bg-center bg-cover pb-4 ">
+    <div className="max-h-screen overflow-hidden bg-crewMobile md:bg-crewTablet xl:bg-crewDesktop bg-no-repeat bg-center bg-cover pb-4 ">
       <Navbar />
-       <p className="md:text-xl xl:text-[28px] flex justify-center gap-3 tracking-[0.2em] md:justify-start md:w-[90%] xl:w-4/5 mx-auto mb-16 xl:mb-32 mt-8 md:mt-4 xl:mt-4">
+       <p className="md:text-xl xl:text-[28px] flex justify-center gap-3 tracking-[0.2em] md:justify-start md:w-[90%] xl:w-4/5 mx-auto mb-16 xl:mb-20 mt-8 md:mt-4 xl:mt-4">
             <span>02</span>MEET YOUR CREW
         </p>
       <div className="w-[90%]  md:w-4/5 mx-auto flex flex-col items-center xl:flex-row">

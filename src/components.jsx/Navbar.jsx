@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import line from "/line.png";
 import logo from "/shared/logo.svg";
 import { NavLink } from "react-router";
 import hamburger from "/shared/icon-hamburger.svg";
+import { tabContext } from "../contexts/TabContext";
 
 const Navbar = () => {
+  const {setIsMobile} = useContext(tabContext)
+const toggleMobileMenu = () => setIsMobile(true)
+
   const navlinks = [
     { name: "HOME", to: "/", id: "00" },
     {
@@ -24,7 +28,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="w-[90vw] md:w-full md:pl-10 xl:pl-14 mx-auto flex items-center justify-between text-white py-5 md:pt-0 xl:py-10 ">
+    <nav className="w-[90vw] md:w-full md:pl-10 xl:pl-14 mx-auto flex items-center justify-between text-white py-5 md:pt-0 xl:py-5 ">
       <div className="md:w-[10%]">
         <img src={logo} alt="logo" width={48} height={48} />
       </div>
@@ -49,7 +53,7 @@ const Navbar = () => {
           </NavLink>
         ))}
       </div>
-      <img src={hamburger} alt="" className="md:hidden" />
+      <img src={hamburger} alt="" className="md:hidden" onClick={toggleMobileMenu}/>
     </nav>
   );
 };
