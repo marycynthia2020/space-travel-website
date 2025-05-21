@@ -23,13 +23,13 @@ const Technology = () => {
         <div className="w-[90%] mx-auto flex flex-col xl:flex-row xl:gap-8   ">
           <TechTab />
           <div className="flex flex-col items-center">
-            <p className="text-lg md:text-2xl xl:text-[32px] mb-2 md:mb-4 xl:mb-8 xl:self-start">
+            <p className="text-lg md:text-2xl xl:text-[32px] mb-2 md:mb-4 xl:mb-8 xl:self-start font-bellefair">
               THE TERMINOLOGY...
             </p>
-            <h2 className="text-2xl md:text-[40px] xl:text-[56px] mb-4 md:mb-6 xl:mb-10 xl:self-start">
+            <h2 className="text-2xl md:text-[40px] xl:text-[56px] mb-4 md:mb-6 xl:mb-10 xl:self-start font-bellefair">
               {technology.name}
             </h2>
-            <p className="text-[15px] md:text-[16px] mb-20 xl:mb-32 text-center xl:self-start xl:text-left tracking-wider leading-loose md:w-3/4 xl:w-full">
+            <p className=" font-barlow text-[15px] md:text-[16px] mb-20 xl:mb-32 text-center xl:self-start xl:text-left tracking-wider leading-loose md:w-3/4 xl:w-full">
               {technology.description}
             </p>
           </div>

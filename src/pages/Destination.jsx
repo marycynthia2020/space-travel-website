@@ -21,7 +21,7 @@ const Destination = () => {
         <h1 className="text-[56px] md:text-[80px] xl:text-8xl font-bellefair text-center xl:text-left xl:mb-10 uppercase">
           {destination.name}
         </h1>
-        <p className="text-[15px] md:text-[16px] text-center xl:text-left tracking-widest leading-loose pb-5 xl:pb-10 border-b ">
+        <p className="text-[15px] md:text-[16px] text-center xl:text-left font-barlow leading-loose pb-5 xl:pb-10 border-b ">
           {destination.description}
         </p>
         <div className="flex flex-col md:flex-row items-center md:justify-between xl:gap-8 xl:w-full">

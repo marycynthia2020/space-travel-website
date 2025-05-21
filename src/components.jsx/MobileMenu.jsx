@@ -41,7 +41,7 @@ const MobileMenu = () => {
                 <span
                   className={isActive ? "w-[3px] h-full bg-white absolute right-0" : ""}
                 ></span>
-                {/* <span className="hidden w-[3px] h-full bg-white absolute right-0  opacity-50"></span> */}
+                <span className="hidden w-[3px] h-full bg-white absolute right-0  opacity-50"></span>
               </div>
             )}
           </NavLink>

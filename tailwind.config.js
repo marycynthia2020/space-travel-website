@@ -21,7 +21,8 @@ export default {
         technologyDesktop: 'url("/technology/background-technology-desktop.jpg")',
       },
       fontFamily: {
-        bellefair: ["Bellefair, serif"]
+        bellefair: ["Bellefair, serif"],
+        barlow: ["Barlow", "sans-serif"],
       }
     },
   },
