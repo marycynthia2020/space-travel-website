@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import Navbar from "../components.jsx/Navbar";
-import space from "/technology/image-launch-vehicle-portrait.jpg";
 import { tabContext } from "../contexts/TabContext";
-import { tech } from "../data";
+
 import TechTab from "../components.jsx/TechTab";
 
 const Technology = () => {

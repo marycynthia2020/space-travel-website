@@ -15,8 +15,9 @@ const Hero = () => {
           experience!
         </p>
       </div>
-      <div className="mx-auto">
-        <button className="w-[144px] h-[144px] md:w-[272px] md:h-[272px] rounded-full bg-white text-black text-lg md:text-3xl tracking-wider opacity-100" onClick={()=> navigate("/destination")}>EXPLORE</button>
+      <div className="mx-auto relative w-[264px] h-[264px]  md:w-[392px] md:h-[392px] flex border">
+        <div className="w-full h-full bg-white rounded-full  hidden opacity-50"></div>
+        <button className="w-[144px] h-[144px]  md:w-[272px] md:h-[272px] rounded-full box bg-white text-black text-lg md:text-3xl tracking-wider place-self-center absolute left-14" onClick={()=> navigate("/destination")}>EXPLORE</button>
       </div>
     </div>
   );

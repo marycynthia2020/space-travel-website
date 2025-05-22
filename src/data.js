@@ -116,3 +116,22 @@ export const tech = [
     }
   ]
 
+  export const navlinks = [
+    { name: "HOME", to: "/", id: "00" },
+    {
+      name: "DESTINATION",
+      to: "/destination",
+      id: "01",
+    },
+    {
+      name: "CREW",
+      to: "/crew",
+      id: "02",
+    },
+    {
+      name: "TECHNOLOGY",
+      to: "/technology",
+      id: "03",
+    },
+  ];
+

@@ -14,6 +14,7 @@ const TechTab = () => {
   };
 
   return (
+    
     <div className="flex gap-4 mb-8 xl:flex-col self-center xl:self-start ">
       <button
         className={

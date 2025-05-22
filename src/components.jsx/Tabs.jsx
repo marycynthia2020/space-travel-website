@@ -46,6 +46,25 @@ const Tabs = () => {
           <span className="hidden  h-[3px] bg-white absolute inset-x-0 -bottom-2 opacity-50"></span>
         </div>
       ))}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
       {/* <div className="relative">
         <button onClick={() => changeTab("Moon")}>MOON</button>
         <span className={currentTab === "Moon"? "h-[3px] bg-white absolute inset-x-0 -bottom-2" : ""}></span>

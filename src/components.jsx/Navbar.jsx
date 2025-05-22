@@ -4,29 +4,12 @@ import logo from "/shared/logo.svg";
 import { NavLink } from "react-router";
 import hamburger from "/shared/icon-hamburger.svg";
 import { tabContext } from "../contexts/TabContext";
+import { navlinks } from "../data";
 
 const Navbar = () => {
   const {setIsMobile} = useContext(tabContext)
 const toggleMobileMenu = () => setIsMobile(true)
 
-  const navlinks = [
-    { name: "HOME", to: "/", id: "00" },
-    {
-      name: "DESTINATION",
-      to: "/destination",
-      id: "01",
-    },
-    {
-      name: "CREW",
-      to: "/crew",
-      id: "02",
-    },
-    {
-      name: "TECHNOLOGY",
-      to: "/technology",
-      id: "03",
-    },
-  ];
   return (
     <nav className="w-[90vw] md:w-full md:pl-10 xl:pl-14 mx-auto flex items-center justify-between text-white py-5 md:pt-0 xl:py-5 ">
       <div className="md:w-[10%]">
@@ -35,7 +18,7 @@ const toggleMobileMenu = () => setIsMobile(true)
       <div className="hidden xl:block w-[40%] -mr-20">
         <img src={line} alt="line" />
       </div>
-      <div className="hidden md:flex items-center justify-between py-9 bg-[#181a25] md:pl-28 md:pr-10 xl:pr-14 md:w-[90%] xl:w-[50%] tracking-[0.15em]">
+      <div className="hidden md:flex items-center justify-between py-9 navbg md:pl-28 md:pr-10 xl:pr-14 md:w-[90%] xl:w-[50%] tracking-[0.15em]">
         {navlinks.map(link => (
           <NavLink key={link.to} to={link.to}>
             {({ isActive }) => (
